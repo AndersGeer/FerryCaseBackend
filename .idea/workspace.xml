@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55c60e63-3ac9-4987-8f61-a43a3154c5a5" name="Default" comment="Added left side items.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Ferry.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/FerryConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/FerryLine.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Schedule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/UserFunctions.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/TestSuite.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FerryCaseBackend.iml" afterPath="$PROJECT_DIR$/FerryCaseBackend.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Ferry.java" afterPath="$PROJECT_DIR$/src/main/java/Ferry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FerryConfig.java" afterPath="$PROJECT_DIR$/src/main/java/FerryConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FerryLine.java" afterPath="$PROJECT_DIR$/src/main/java/FerryLine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Schedule.java" afterPath="$PROJECT_DIR$/src/main/java/Schedule.java" />
     </list>
     <ignored path="FerryCaseBackend.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,7 +84,7 @@
       <file leaf-file-name="Ferry.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Ferry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
+            <state relative-caret-position="313">
               <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -132,6 +127,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -765,7 +765,7 @@
       <updated>1479809738329</updated>
       <workItem from="1479809741732" duration="3777000" />
       <workItem from="1479814332392" duration="961000" />
-      <workItem from="1479815373245" duration="4689000" />
+      <workItem from="1479815373245" duration="4812000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1479814497829</created>
@@ -788,11 +788,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479815201272</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added left side items.">
+      <created>1479820144709</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1479820144709</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9427000" />
+    <option name="totallyTimeSpent" value="9550000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -853,7 +860,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
+    <MESSAGE value="Added left side items." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added left side items." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1010,7 +1018,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Ferry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
+        <state relative-caret-position="313">
           <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
