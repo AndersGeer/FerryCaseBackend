@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: net.sourceforge.plantuml:plantuml:8032">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/plantuml/plantuml/8032/plantuml-8032.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/plantuml/plantuml/8032/plantuml-8032-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/plantuml/plantuml/8032/plantuml-8032-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
