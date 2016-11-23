@@ -1,4 +1,6 @@
 import contract.*;
+import contract.Reservation;
+import contract.Vehicle;
 import eto.*;
 
 import java.util.Collection;
@@ -22,4 +24,7 @@ public class UserFunctions implements UserContract {
 	public Reservation ViewReservation(Number number, String s) throws InvalidReservationIdException, InvalidEmailException, InvalidReservationException {
 		return null;
 	}
+	
+	
+	
 }

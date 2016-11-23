@@ -6,4 +6,7 @@ import org.junit.runners.Suite;
 		/*classes*/
 })
 public class TestSuite {
+	
+	
+	
 }
