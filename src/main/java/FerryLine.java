@@ -10,8 +10,12 @@ public class FerryLine {
     private String endDestination;
     private Ferry ferry;
     private Set<Schedule> schedules = new HashSet<>();
-    private Set<FerryConfig> ferryConfigs = new HashSet<>();
 
+    public FerryLine(String startDestination, String endDestination, Ferry ferry) {
+        this.startDestination = startDestination;
+        this.endDestination = endDestination;
+        this.ferry = ferry;
+    }
 
     public String getStartDestination() {
         return startDestination;
@@ -29,9 +33,6 @@ public class FerryLine {
         return schedules;
     }
 
-    public Set<FerryConfig> getFerryConfigs() {
-        return ferryConfigs;
-    }
 
 
 }

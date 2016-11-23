@@ -1,4 +1,5 @@
 import contract.*;
+import contract.DepartureTime;
 import eto.*;
 
 import java.util.Collection;

@@ -11,9 +11,14 @@ public class Ferry
     private boolean dockedState;
     private boolean lentState;
     private Set<FerryLine> ferryLines = new HashSet<FerryLine>();
+    private Set<FerryConfig> ferryConfigs = new HashSet<>();
 
     public String getSerialNumber() {
         return serialNumber;
+    }
+
+    public Set<FerryConfig> getFerryConfigs() {
+        return ferryConfigs;
     }
 
     public String getName() {
@@ -42,13 +47,13 @@ public class Ferry
 
     public int addFerryLine(String startDest, String endDest)
     {
-        /*FerryLine fl = new FerryLine(startDest, endDest, this);
+        FerryLine fl = new FerryLine(startDest, endDest, this);
         ferryLines.add(fl);
         if (ferryLines.contains(fl))
         {
             return 1;
         }
-        */
+
         return -1;
 
     }
