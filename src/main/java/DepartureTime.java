@@ -12,7 +12,7 @@ private LocalTime departureTime;
         return departureTime;
     }
 
-    public DepartureTime(LocalTime departureTime) {
-        this.departureTime = departureTime;
+    public DepartureTime(int hour, int minute) {
+        departureTime = LocalTime.of(hour,minute);
     }
 }
