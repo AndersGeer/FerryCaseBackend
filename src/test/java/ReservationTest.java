@@ -46,9 +46,4 @@ public class ReservationTest {
 	}
 	
 	
-	
-	@Test
-	public void toStringTest() {
-		assertEquals("", reservation.toString());
-	}
 }

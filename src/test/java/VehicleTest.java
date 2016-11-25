@@ -21,20 +21,9 @@ public class VehicleTest {
 		assertEquals("None", vehicle.getType());
 	}
 	
-	@Test(expected = NullPointerException.class)
-	public void nullPointerExceptionTest() {
-		vehicle.getReservation();
-	}
-	
-	@Test
-	public void getReservationIsNotNullTest() {
-		vehicle = new Vehicle(VehicleType.BICYCLE);
-		assertNotNull(vehicle.getReservation());
-	}
-	
 	@Test
 	public void toStringTest() {
-		assertEquals("Vehicle{type=None, reservation=null}", vehicle.toString());
+		assertEquals("Vehicle{type=None}", vehicle.toString());
 	}
 	
 	
