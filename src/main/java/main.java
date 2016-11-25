@@ -30,24 +30,19 @@ public class main
         //vehicles.add(new Vehicle(VehicleType.Motorcycle));
         //vehicles.add(new Vehicle(VehicleType.Car));
         
-        //Reservation r = new Reservation(100,new Date(),new Person(),passengers, vehicles);
-    
-        System.out.println();
-    
-    
-        Calendar calendar;
-        calendar = Calendar.getInstance();
-        calendar.set(Calendar.HOUR_OF_DAY, 0);
-        calendar.set(Calendar.MINUTE, 0);
-        calendar.set(Calendar.SECOND, 0);
-        calendar.set(Calendar.MILLISECOND, 0);
-    
-        Date newD = new Date(0);
-    
-        System.out.println(newD);
-        System.out.println(calendar.getTime());
-    
-        System.out.println(newD.before(calendar.getTime()));
+        Person person = new Person();
+        Vehicle vehicle = new Vehicle(VehicleType.BICYCLE);
+        
+        Reservation reservation = new Reservation(100,new Date(),person,5,vehicle);
+//        System.out.println(reservation.getNoOfPassengers());
+//        System.out.println(reservation.getOwner());
+//        System.out.println(reservation.getPassengerList());
+//        System.out.println(reservation.getPrice());
+//        System.out.println(reservation.getReservationDate());
+//        System.out.println(vehicle);
+        
+        
+        
         
         
         

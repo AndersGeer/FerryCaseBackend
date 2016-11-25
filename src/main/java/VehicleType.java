@@ -3,15 +3,23 @@
  */
 public enum VehicleType {
 	
-	BICYCLE,
-	MOTORCYCLE,
-	SCOOTER,
-	LORRY,
-	CAR,
-	MACHINERY,
-	BUS,
-	NONE
+	BICYCLE ("Bicycle"),
+	MOTORCYCLE ("Motorcycle"),
+	SCOOTER ("Scooter"),
+	LORRY ("Lorry"),
+	CAR ("Car"),
+	MACHINERY ("Machinery"),
+	BUS ("Bus"),
+	NONE ("None");
 	
+	private final String type;
 	
+	private VehicleType(String type) {
+		this.type = type;
+	}
+	
+	public String getTypeDescription() {
+		return type;
+	}
 	
 }

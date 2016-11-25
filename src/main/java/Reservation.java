@@ -15,96 +15,124 @@ public class Reservation {
 	private Vehicle vehicle = null;
 	private Calendar calendar;
 	
-	
-	
 	//region Constructors
 	//+Vehicle
-	public Reservation(int price, Date reservationDate, Person owner, int noOfPassengers, Vehicle vehicle, VehicleType type) throws InvalidDataException {
+	public Reservation(int price, Date reservationDate, Person owner, int noOfPassengers, Vehicle vehicle) {
 		setPrice(price);
 		setReservationDate(reservationDate);
 		setOwner(owner);
 		setPassengerList(noOfPassengers);
-		setVehicles(vehicle,type);
+		setVehicle(vehicle);
 	}
 	
 	//-Vehicle
-	public Reservation(int price, Date reservationDate, Person owner, int noOfPassengers) throws InvalidDataException {
+	public Reservation(int price, Date reservationDate, Person owner, int noOfPassengers) {
 		setPrice(price);
 		setReservationDate(reservationDate);
 		setOwner(owner);
 		setPassengerList(noOfPassengers);
-		setVehicles(this.vehicle, null);
+		setVehicle(this.vehicle);
 	}
+	
+	public Reservation() {
+		
+	}
+	
 	//endregion
 	
 	//region Getters
 	public int getPrice() {
-		return price;
+		return this.price;
 	}
 	
 	public Date getReservationDate() {
-		return reservationDate;
+		return this.reservationDate;
 	}
 	
 	public Person getOwner() {
-		return owner;
+		return this.owner;
 	}
 	
 	public int getNoOfPassengers() {
-		return passengerList.size();
+		return this.passengerList.size();
 	}
 	
+	public List<Passenger> getPassengerList() {return passengerList;}
+	
 	public Vehicle getVehicle() {
-		return vehicle;
+		return this.vehicle;
 	}
 	
 	//endregion
 	
 	//region Restriction Setters
-	private void setPrice(int price) throws InvalidDataException {
-		if (price < 0) {
-			throw new InvalidDataException("Reservation is Invalid");
-		} else if (price > Integer.MAX_VALUE) {
-			throw new InvalidDataException("'price' cannot exceed "+Integer.MAX_VALUE);
-		} else {
-			this.price = price;
+	private void setPrice(int price) {
+		
+		
+		try {
+			if (price < 0) {
+				throw new InvalidDataException("Reservation is Invalid, price cannot be negative");
+			} else if (price > Integer.MAX_VALUE) {
+				throw new InvalidDataException("'price' cannot exceed " + Integer.MAX_VALUE);
+			} else {
+				this.price = price;
+			}
+		} catch (InvalidDataException e) {
+			System.out.println(e.getMessage());
 		}
 	}
 	
-	private void setReservationDate(Date reservationDate) throws InvalidDataException {
-		if (checkDate(reservationDate)) {
-			throw new InvalidDataException("Date of Reservation Expired!");
-		} else {
-			this.reservationDate = reservationDate;
+	private void setReservationDate(Date reservationDate) {
+		try {
+			if (checkDate(reservationDate)) {
+				throw new InvalidDataException("Date of Reservation Expired!");
+			} else {
+				this.reservationDate = reservationDate;
+			}
+		} catch (InvalidDataException e){
+			System.out.println(e.getMessage());
 		}
 	}
 	
 	private void setOwner(Person owner) {
-		
-		if (owner == null) {
-			throw new NullPointerException(owner+" is null, owner required for valid reservation!");
-		} else {
-			this.owner = owner;
-			owner.addReservation(this);
-		}
-	}
-	
-	private void setPassengerList(int noOfPassengers) throws InvalidDataException {
-		if (passengerList.isEmpty() || passengerList == null) {
-			throw new InvalidDataException("List of Passengers is null or Empty");
-		} else {
-			passengerList = new ArrayList<>();
-			for (int x = 0; x < noOfPassengers; x++) {
-				passengerList.add(new Passenger(this));
+		try {
+			if (owner == null) {
+				throw new NullPointerException(owner + " is null, owner required for valid reservation!");
+			} else {
+				this.owner = owner;
+				owner.addReservation(this);
 			}
+		} catch (NullPointerException e){
+			System.out.println(e.getMessage());
 		}
 	}
 	
-	private void setVehicles(Vehicle vehicle, VehicleType type) throws InvalidDataException {
-		if (vehicle == null) {
-			this.vehicle = new Vehicle(VehicleType.NONE, this);
+	private void setPassengerList(int noOfPassengers) {
+		try {
+			if (noOfPassengers > 0){
+				this.passengerList = new ArrayList<>();
+				for (int x = 0; x < noOfPassengers; x++) {
+					this.passengerList.add(new Passenger(this));
+				}
+			} else if (this.passengerList.isEmpty() || noOfPassengers == 0) {
+				throw new InvalidDataException("List of Passengers is Empty (Not Allowed)");
+			}  else if (this.passengerList == null) {
+				throw new NullPointerException("List of Passengers is null");
+			}
+			
+		} catch (InvalidDataException e) {
+			System.out.println(e.getMessage());
+		} catch (NullPointerException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+	
+	private void setVehicle(Vehicle veh) {
+		if (veh == null) {
+			vehicle = new Vehicle(VehicleType.NONE);
 		} else {
-			this.vehicle = new Vehicle(type, this);
+			veh.setReservation(this);
+			vehicle = veh;
 		}
 	}
 	

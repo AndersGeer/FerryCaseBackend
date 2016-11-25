@@ -14,6 +14,9 @@ public class Person {
 	private List<Reservation> reservationList = new ArrayList<>();
 	
 	
+	public Person() {
+	}
+	
 	public Person(String firstName, String lastName, String mobileNo, String email, String address) {
 		this.firstName = firstName;
 		this.lastName = lastName;
