@@ -1,4 +1,5 @@
 import contract.*;
+import contract.DepartureTime;
 import contract.Reservation;
 import contract.Vehicle;
 import eto.*;
@@ -9,11 +10,12 @@ import java.util.Date;
 
 public class UserFunctions implements UserContract {
 	
-	public Collection<DepartureTime> getAllDepartures(Date date, FerryLineInfo ferryLineInfo) throws InvalidDateException, InvalidRouteException {
+	
+	public Reservation createReservation(PersonInfo personInfo, FerryLineInfo ferryLineInfo, DepartureTime departureTime, Vehicle vehicle, Number number, Number number1) throws NoVacanciesException, InvalidDateException {
 		return null;
 	}
 	
-	public Reservation createReservation(PersonInfo personInfo, FerryLineInfo ferryLineInfo, DepartureTime departureTime, Vehicle vehicle, Number number, Number number1) throws NoVacanciesException, InvalidDateException {
+	public Collection<DepartureTime> getAllDepartures(Date date, FerryLineInfo ferryLineInfo) throws InvalidDateException, InvalidRouteException {
 		return null;
 	}
 	
