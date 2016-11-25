@@ -1,0 +1,38 @@
+import java.util.HashSet;
+import java.util.Set;
+
+/**
+ * Created by geera on 22-Nov-16.
+ */
+public class FerryLine {
+
+    private String startDestination;
+    private String endDestination;
+    private Ferry ferry;
+    private Set<Schedule> schedules = new HashSet<>();
+
+    public FerryLine(String startDestination, String endDestination, Ferry ferry) {
+        this.startDestination = startDestination;
+        this.endDestination = endDestination;
+        this.ferry = ferry;
+    }
+
+    public String getStartDestination() {
+        return startDestination;
+    }
+
+    public String getEndDestination() {
+        return endDestination;
+    }
+
+    public Ferry getFerry() {
+        return ferry;
+    }
+
+    public Set<Schedule> getSchedules() {
+        return schedules;
+    }
+
+
+
+}
