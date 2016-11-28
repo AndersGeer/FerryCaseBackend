@@ -6,6 +6,7 @@ import org.junit.Before;
 public class DepartureTimeTest
 {
     private DepartureTime departureTime;
+    
     @Before
     public void beforeMethods()
     {

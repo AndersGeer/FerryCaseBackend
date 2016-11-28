@@ -8,7 +8,6 @@ public class Passenger {
 	private Reservation reservation;
 	
 	public Passenger() {
-		
 	}
 	
 	public Passenger(Reservation reservation) {

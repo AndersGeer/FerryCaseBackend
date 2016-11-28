@@ -60,4 +60,17 @@ public class Person {
 	public int noOfReservation() {
 		return reservationList.size();
 	}
+	
+	
+	@Override
+	public String toString() {
+		return "Person{" +
+				"firstName='" + firstName + '\'' +
+				", lastName='" + lastName + '\'' +
+				", mobileNo='" + mobileNo + '\'' +
+				", email='" + email + '\'' +
+				", address='" + address + '\'' +
+				", reservations=" + reservationList.size() +
+				'}';
+	}
 }

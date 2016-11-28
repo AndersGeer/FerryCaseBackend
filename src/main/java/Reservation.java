@@ -97,7 +97,7 @@ public class Reservation {
 	private void setOwner(Person owner) {
 		try {
 			if (owner == null) {
-				throw new NullPointerException(owner + " is null, owner required for valid reservation!");
+				throw new NullPointerException("owner is null, owner required for valid reservation!");
 			} else {
 				this.owner = owner;
 				owner.addReservation(this);
