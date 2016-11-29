@@ -83,7 +83,6 @@ public class ReservationTest {
 		
 	}
 	
-	
 	@Test
 	public void reservationConstructor1VehicleNotNullButNoneTest() {
 		nullReservation = new Reservation(1, new Date(),person,1,null);
