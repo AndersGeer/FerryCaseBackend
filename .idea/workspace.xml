@@ -55,8 +55,8 @@
       <file leaf-file-name="main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="294">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -898,7 +898,7 @@
       <workItem from="1479817935845" duration="27936000" />
       <workItem from="1480071900976" duration="10484000" />
       <workItem from="1480424919622" duration="111000" />
-      <workItem from="1480500820495" duration="2156000" />
+      <workItem from="1480500820495" duration="2782000" />
     </task>
     <task id="LOCAL-00001" summary="TestSuite class added&#10;">
       <created>1479814728045</created>
@@ -963,7 +963,14 @@
       <option name="project" value="LOCAL" />
       <updated>1480506469387</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Auto build guess">
+      <created>1480507314719</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1480507314719</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -999,7 +1006,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44758000" />
+    <option name="totallyTimeSpent" value="45384000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1099,7 +1106,8 @@
     <MESSAGE value="Tests for Vehicle and reservation" />
     <MESSAGE value="Added tests for left side, missing ScheduleTest" />
     <MESSAGE value="FIxed sun stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIxed sun stuff" />
+    <MESSAGE value="Auto build guess" />
+    <option name="LAST_COMMIT_MESSAGE" value="Auto build guess" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1624,8 +1632,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="294">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
