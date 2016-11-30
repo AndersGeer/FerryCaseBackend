@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: ScooterHundt:contract:1.0-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/ScooterHundt/contract/1.0-SNAPSHOT/contract-1.0-20161124.171100-27.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/ScooterHundt/contract/1.0-SNAPSHOT/contract-1.0-20161129.101742-33.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/ScooterHundt/contract/1.0-SNAPSHOT/contract-1.0-20161124.171100-27-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/ScooterHundt/contract/1.0-SNAPSHOT/contract-1.0-20161129.101742-33-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/ScooterHundt/contract/1.0-SNAPSHOT/contract-1.0-20161124.171100-27-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/ScooterHundt/contract/1.0-SNAPSHOT/contract-1.0-20161129.101742-33-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

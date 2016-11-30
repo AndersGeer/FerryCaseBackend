@@ -1,20 +1,19 @@
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Created by geera on 22-Nov-16.
- */
+
 public class FerryLine {
 
     private String startDestination;
     private String endDestination;
     private Ferry ferry;
-    private Set<Schedule> schedules = new HashSet<>();
+    private Set<Schedule> schedules;
 
-    public FerryLine(String startDestination, String endDestination, Ferry ferry) {
+    public FerryLine(String startDestination, String endDestination) {
         this.startDestination = startDestination;
         this.endDestination = endDestination;
-        this.ferry = ferry;
+        ferry = null;
+        schedules = new HashSet<>();
     }
 
     public String getStartDestination() {
@@ -23,6 +22,11 @@ public class FerryLine {
 
     public String getEndDestination() {
         return endDestination;
+    }
+
+    public void setFerry(Ferry ferry)
+    {
+        this.ferry = ferry;
     }
 
     public Ferry getFerry() {

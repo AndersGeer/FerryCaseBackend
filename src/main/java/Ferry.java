@@ -1,5 +1,5 @@
-import com.sun.media.sound.InvalidDataException;
 import eto.FerryNotFoundException;
+import eto.InvalidDataException;
 
 import java.util.*;
 
@@ -19,6 +19,10 @@ public class Ferry
 
     public Set<FerryConfig> getFerryConfigs() {
         return ferryConfigs;
+    }
+
+    public void addFerryConfig(int personLimit, int carLimit, int lorryLimit, int machineLimit) throws InvalidDataException {
+        ferryConfigs.add(new FerryConfig(personLimit,carLimit,lorryLimit,machineLimit));
     }
 
     public String getName() {
@@ -47,7 +51,8 @@ public class Ferry
 
     public int addFerryLine(String startDest, String endDest)
     {
-        FerryLine fl = new FerryLine(startDest, endDest, this);
+        FerryLine fl = new FerryLine(startDest, endDest);
+        fl.setFerry(this);
         ferryLines.add(fl);
         if (ferryLines.contains(fl))
         {
@@ -72,17 +77,25 @@ public class Ferry
 
     }
 
-    public Ferry(String serialNumber, String name, boolean dockedState, boolean lentState, String startDestination, String endDestination) throws InvalidDataException {
-        if (serialNumber.trim().length() == 5) {
+    public Ferry(String serialNumber,
+                 String name,
+                 boolean dockedState,
+                 boolean lentState,
+                 String startDestination,
+                 String endDestination,
+                 int personLimit,
+                 int carLimit,
+                 int lorryLimit,
+                 int machineLimit) throws InvalidDataException {
+        if (serialNumber != null &&
+                serialNumber.trim().length() == 5 &&
+                name.trim().length() > 5 &&
+                startDestination.trim().length() > 3 &&
+                endDestination.trim().length() > 3) {
             this.serialNumber = serialNumber;
-        }
-        else if (name.trim().length() > 5) {
             Name = name;
-        }
-
-        else if (startDestination.trim().length() > 3 && endDestination.trim().length() > 3)
-        {
-            addFerryLine(startDestination,endDestination);
+            addFerryLine(startDestination, endDestination);
+            addFerryConfig(personLimit, carLimit, lorryLimit, machineLimit);
         }
         else
         {
