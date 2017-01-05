@@ -9,5 +9,3 @@ Our Jenkins is setup in a way that allows us to continually build and push to th
 Jenkins also makes a build on a daily basis no matter if there are any changes present, this obviously is somewhat redundant with a build branch.
 
 Jenkins then pushes to our artifactory on a successful build.
-
-How we setup the project! What would they have to do, to get the same results!
